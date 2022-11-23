@@ -284,14 +284,12 @@ strong {
   font-weight: 700;
 }
 a {
+  color: inherit;
   display: block;
-  color: #2b2b2b;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 a:hover {
-  color: #000;
+  color: #7E9A8E;
   text-decoration: none;
 }
 ul {
@@ -344,12 +342,10 @@ h3 {
   color: #fff;
   border-radius: 10px;
   background-color: #C6B095;
-  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.15);
 }
 .btn:hover {
   color: #fff;
   background-color: #AFA292;
-  box-shadow: -1px 1px 6px 1px rgba(0, 0, 0, 0.25);
 }
 
 .header {
@@ -370,6 +366,7 @@ h3 {
 }
 .header-item {
   display: flex;
+  align-items: center;
 }
 .header-item svg {
   margin-right: 5px;
@@ -384,13 +381,14 @@ h3 {
   padding: 1rem;
   color: #757575;
   font-size: 14px;
+  min-height: 95px;
+  border-bottom: 1px solid #E5E5E5;
   background-color: #fff;
 }
 .topline i {
   color: #d76a03;
 }
 .header-mail a.mgo-number {
-  color: #fff; /* font-size: 1.8rem; */
 }
 .sticky-wrapper {
   height: auto !important;
@@ -442,14 +440,12 @@ h3 {
   transform: rotate(-45deg) translate(6px, -7px);
 }
 .topnav {
-  padding: 2rem 0;
-  background-color: #343434;
-  font-size: 24px;
 }
 .topnav a,
 .topnav span {
-  color: #fff;
+  color: inherit;
   position: relative;
+  font-weight: 500;
 }
 .topnav a:after,
 .topnav span:after {
@@ -1860,12 +1856,8 @@ ul.submenu li ul li {
   transition-duration: 0.5s;
 }
 
-ul.submenu li a {
-  color: #fff;
-}
-
 ul.submenu li:hover {
-  color: #fff;
+  color: #7E9A8E;
 }
 
 ul.submenu li ul li:hover,
@@ -2142,14 +2134,6 @@ img.strelka {
 }
 #search input {
   background: #fff url(../img/seach.png) no-repeat center right;
-}
-.header-mail a.mgo-number:hover {
-  color: #d76a03;
-}
-.btn.btn-black.btn-js.akz.shapka:hover {
-  background: #00939a;
-  border: 2px solid #00939a;
-  color: #fff;
 }
 .header-logo {
   max-width: 240px;
