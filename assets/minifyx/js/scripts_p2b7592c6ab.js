@@ -459,7 +459,6 @@ $(function() {
 	});
 
 
-
 	$('.owl-carousel').owlCarousel({
 		loop:true,
 		margin:20,
@@ -482,7 +481,6 @@ $(function() {
 	});
 
 
-
 	//
 	$('.btn-js').on('click', function() {
 		var atr = $(this).attr('data-btn');
@@ -490,12 +488,11 @@ $(function() {
 	});
 
 
-
 	//кнопка наверх
 	$("body").on("click", ".top", function () {
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 	});
-	$("body").append('<div class="top"><i class="fa fa-angle-double-up">');
+	$("body").append('<div class="top"></div>');
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > $(this).height()) {
 			$(".top").addClass("active");
@@ -503,7 +500,4 @@ $(function() {
 			$(".top").removeClass("active");
 		}
 	});
-
-
-
 });

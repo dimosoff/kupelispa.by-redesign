@@ -458,32 +458,38 @@
 							<div class="col-sm-6 d-flex align-items-center">
 								<svg class="calculator-cost__icon" width="19" height="19">
 									<use href="assets/img/sprite.svg#width">
-								</svg><p><b>Размер:</b> 200x200 см</p>
+								</svg>
+								<p><b>Размер:</b> 200x200 см</p>
 							</div>
 							<div class="col-sm-6 d-flex align-items-center">
 								<svg class="calculator-cost__icon" width="19" height="19">
 									<use href="assets/img/sprite.svg#weight">
-								</svg><p><b>Вес:</b> 280 кг</p>
+								</svg>
+								<p><b>Вес:</b> 280 кг</p>
 							</div>
 							<div class="col-sm-6 d-flex align-items-center">
 								<svg class="calculator-cost__icon" width="19" height="19">
 									<use href="assets/img/sprite.svg#height">
-								</svg><p><b>Высота:</b> 110 см</p>
+								</svg>
+								<p><b>Высота:</b> 110 см</p>
 							</div>
 							<div class="col-sm-6 d-flex align-items-center">
 								<svg class="calculator-cost__icon" width="19" height="19">
 									<use href="assets/img/sprite.svg#person">
-								</svg><p><b>Вместимость:</b> 6 чел</p>
+								</svg>
+								<p><b>Вместимость:</b> 6 чел</p>
 							</div>
 							<div class="col-sm-6 d-flex align-items-center">
 								<svg class="calculator-cost__icon" width="19" height="19">
 									<use href="assets/img/sprite.svg#drop">
-								</svg><p><b>Объем:</b> 1500 л</p>
+								</svg>
+								<p><b>Объем:</b> 1500 л</p>
 							</div>
 							<div class="col-sm-6 d-flex align-items-center">
 								<svg class="calculator-cost__icon" width="19" height="19">
 									<use href="assets/img/sprite.svg#fire">
-								</svg><p><b>Подогрев:</b> да</p>
+								</svg>
+								<p><b>Подогрев:</b> да</p>
 							</div>
 						</div>
 					</div>
@@ -541,7 +547,7 @@
 						</div>
 					</div>
 					<!-- row -->
-					<div class="calculator-cost__complete-row">
+					<div class="calculator-cost__complete-row" style="display: none;">
 						<div class="calculator-cost__complete-title">Выберите опции:</div>
 						<div class="calculator-cost__checkboxes  checkboxes vt-center">
 							<div class="checkboxes__list">
@@ -549,9 +555,6 @@
 									<input class="b-checkbox__input" type="checkbox" name="option1" value="аэромассаж" onchange="calc()">
 									<span class="b-checkbox__custom"></span>
 									<span class="b-checkbox__content">
-										<svg>
-											<use xlink:href="assets/templates/polarspa/img/components/b-checkbox/sprite.svg#airmassage"></use>
-										</svg>
 										аэромассаж с хромотерапией
 									</span>
 								</label>
@@ -560,10 +563,6 @@
 										onchange="calc()">
 									<span class="b-checkbox__custom"></span>
 									<span class="b-checkbox__content">
-										<svg>
-											<use xlink:href="assets/templates/polarspa/img/components/b-checkbox/sprite.svg#сhromotherapy">
-											</use>
-										</svg>
 										хромотерапия
 									</span>
 								</label>
@@ -572,9 +571,6 @@
 										onchange="calc()">
 									<span class="b-checkbox__custom"></span>
 									<span class="b-checkbox__content">
-										<svg>
-											<use xlink:href="assets/templates/polarspa/img/components/b-checkbox/sprite.svg#insulation"></use>
-										</svg>
 										утепление чаши
 									</span>
 								</label>
@@ -587,13 +583,10 @@
 						<div class="calculator-cost__checkboxes  checkboxes vt-center">
 							<div class="checkboxes__list">
 
-								<label class="b-checkbox b-checkbox--light" style="display: none;">
+								<label class="b-checkbox b-checkbox--light">
 									<input class="b-checkbox__input" type="checkbox" name="accessories1" value="печь" onchange="calc()">
 									<span class="b-checkbox__custom"></span>
 									<span class="b-checkbox__content">
-										<svg>
-											<use xlink:href="assets/templates/polarspa/img/components/b-checkbox/sprite.svg#bake"></use>
-										</svg>
 										печь
 									</span>
 								</label>
@@ -603,9 +596,6 @@
 										onchange="calc()">
 									<span class="b-checkbox__custom"></span>
 									<span class="b-checkbox__content">
-										<svg>
-											<use xlink:href="assets/templates/polarspa/img/components/b-checkbox/sprite.svg#termalmugs"></use>
-										</svg>
 										термокрышка
 									</span>
 								</label>
@@ -614,9 +604,6 @@
 									<input class="b-checkbox__input" type="checkbox" name="accessories3" value="полка" onchange="calc()">
 									<span class="b-checkbox__custom"></span>
 									<span class="b-checkbox__content">
-										<svg>
-											<use xlink:href="assets/templates/polarspa/img/components/b-checkbox/sprite.svg#shelf"></use>
-										</svg>
 										полка
 									</span>
 								</label>
@@ -625,9 +612,6 @@
 									<input class="b-checkbox__input" type="checkbox" name="accessories4" value="тент" onchange="calc()">
 									<span class="b-checkbox__custom"></span>
 									<span class="b-checkbox__content">
-										<svg>
-											<use xlink:href="assets/templates/polarspa/img/components/b-checkbox/sprite.svg#tent"></use>
-										</svg>
 										тент
 									</span>
 								</label>
@@ -638,9 +622,6 @@
 										onchange="calc()">
 									<span class="b-checkbox__custom"></span>
 									<span class="b-checkbox__content">
-										<svg>
-											<use xlink:href="assets/templates/polarspa/img/components/b-checkbox/sprite.svg#ladder"></use>
-										</svg>
 										лестница (3 ступени)
 									</span>
 								</label>
@@ -651,11 +632,11 @@
 					<!-- total -->
 					<div class="calculator-cost__total">
 						<div class="calculator-cost__total-desc">
-							Модель: <span>ELITE 220;</span><span id="infoT"></span>
+							Вы выбрали: <span>ELITE 220;</span><span id="infoT"></span>
 						</div>
-						<div class="calculator-cost__total-priceBox b-row">
-							<div class="calculator-cost__total-price b-col">
-								Итого: <span id="result">11 330</span> BYN
+						<div class="calculator-cost__total-priceBox">
+							<div class="calculator-cost__total-price">
+								Итого: <span><span id="result">11 330</span> BYN</span>
 							</div>
 							<a href="#hidden-content" class="btn" onclick="setParamForm1('Купель ELITE 220');"
 								data-fancybox>Купить</a>
@@ -728,10 +709,17 @@
 				</script>
 
 			</div>
+			<div class="row calculator-cost__description">
+				<p class="col">Мы создали для вас удобный калькулятор стоимости купели, с помощью которого можно получить онлайн
+					расчёт цены выбранной купели с подогревом для улицы или бани. Нужно только выбрать модель и внешнюю отделку,
+					обратите внимание на характеристики купелей - они меняются в зависимости от выбранной модели. Сделайте
+					грамотный выбор! Наши купели изготовливаются из европейских композитных материалов, защищены немецким
+					гелькоутом премиум класса. Аксессуары и дополнительные товары можно подобрать по телефону.</p>
+			</div>
 		</div>
 	</section>
 	<!--[-[$calc]-]-->
-	<div class="us popular">
+	<div class="us popular" style="display: none;">
 		<div class="container">
 			<div class="us-title">Каталог композитных купелей</div>
 			<div class="row no-gutters">
@@ -1672,54 +1660,122 @@
 		</div>
 	</div>
 	<div class="forma">
-		<div class="container1">
-			<div class="row no-gutters">
-				<div class="col-md-7" style="background: #f9f9f9;justify-content: flex-end;align-items: center;display: flex;">
-					<div class="forma-box" style="max-width:700px">
-						<p>Заполните заявку и наши менеджеры помогут
-							подобрать купель по Вашим параметрам</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="forma-box">
+						<h2 class="us-title">Заполните заявку и наши менеджеры помогут
+							подобрать купель по Вашим параметрам</h2>
 						<form action="" method="post" id="formprod" class="ajax_form"
-							onsubmit="yaCounter51284014.reachGoal('goal');" style="width: 100%;">
+							onsubmit="yaCounter51284014.reachGoal('goal');">
 							<input type="hidden" name="page" value="Главная">
 							<input type="hidden" name="forma" value="Центральная форма">
-
-							<input type="tel" required placeholder="Ваш телефон" name="phone"
-								style="box-shadow: 0 0 10px 0 rgba(215,106,2,.5);">
-							<span class="error_phone"></span>
-							<input type="checkbox" required checked name="option2" value="a2"
-								style="width: auto;padding-left: 5px;display: inline-block;box-shadow: 0 0 5px 0 rgba(215,106,2,.5)">
-							<span style="font-size: 12px;">Я согласен на обработку персональных данных</span><Br>
-							<input type="submit" value="Отправить заявку">
-
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" required placeholder="Имя" name="name">
+									<span class="error_name"></span>
+								</div>
+								<div class="col-md-6">
+									<input type="tel" required placeholder="Телефон" name="phone">
+									<span class="error_phone"></span>
+								</div>
+								<div class="col-12">
+									<input type="email" required placeholder="E-mail" name="email">
+									<span class="error_email"></span>
+								</div>
+								<div class="col-12">
+									<textarea placeholder="Комментарий" name="comment"></textarea>
+								</div>
+								<div class="col-12">
+									<label>
+										<input type="checkbox" required checked name="option2" value="a2">
+										<span>Я согласен на обработку персональных данных</span>
+									</label>
+								</div>
+								<div class="col-12">
+									<input class="btn" type="submit" value="Отправить">
+								</div>
+							</div>
 							<input type="hidden" name="af_action" value="64ea6dee5cd779f516d70bc879a4d5a8" />
 						</form>
 					</div>
 				</div>
 				<div class="col-md-5">
-					<img src="assets/img/img.jpg" class="image" alt="">
+					<div class="image-wrapper">
+						<img src="assets/img/img.jpg" class="image" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<h2 class="us-title">Новости</h2>
-		<br>
-
-		<p class="cleaner"></p>
+	<div class="blogm">
+		<div class="container">
+			<h2 class="us-title">Новости</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<a href="#" class="blogm-item">
+						<div class="image-wrapper">
+							<img src="assets/img/blog-background.jpg" class="image"
+								alt="Купель ЗАКАЛИТЬСЯ С ПОМОЩЬЮ КУПЕЛИ: ПОЛЕЗНЫЕ СОВЕТЫ И РЕКОМЕНДАЦИИ">
+						</div>
+						<div class="blogm-wrapper">
+							<h3 class="blogm-title">ЗАКАЛИТЬСЯ С ПОМОЩЬЮ КУПЕЛИ: ПОЛЕЗНЫЕ СОВЕТЫ И РЕКОМЕНДАЦИИ</h3>
+							<div class="d-flex blogm-additional">
+								<div class="d-flex align-items-center blogm-views">
+									<svg width="16" height="16">
+										<use href="assets/img/sprite.svg#eye">
+									</svg><span>1000</span>
+								</div>
+								<div class="blogm-date">01/12/2022</div>
+							</div>
+							<div class="blogm-description">
+								<p>Имея современную купель на загородном участке, можно проводить
+									закаливающие водные процедуры круглый год, вне зависимости от сезона или погодных условий.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="#" class="blogm-item">
+						<div class="image-wrapper">
+							<img src="assets/img/blog-background.jpg" class="image"
+								alt="Купель ЗАКАЛИТЬСЯ С ПОМОЩЬЮ КУПЕЛИ: ПОЛЕЗНЫЕ СОВЕТЫ И РЕКОМЕНДАЦИИ">
+						</div>
+						<div class="blogm-wrapper">
+							<h3 class="blogm-title">ЗАКАЛИТЬСЯ С ПОМОЩЬЮ КУПЕЛИ: ПОЛЕЗНЫЕ СОВЕТЫ И РЕКОМЕНДАЦИИ</h3>
+							<div class="d-flex blogm-additional">
+								<div class="d-flex align-items-center blogm-views">
+									<svg width="16" height="16">
+										<use href="assets/img/sprite.svg#eye">
+									</svg><span>1000</span>
+								</div>
+								<div class="blogm-date">01/12/2022</div>
+							</div>
+							<div class="blogm-description">
+								<p>Имея современную купель на загородном участке, можно проводить
+									закаливающие водные процедуры круглый год, вне зависимости от сезона или погодных условий.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="btn btn-green">Перейти в новости</a>
+			<p class="cleaner"></p>
+		</div>
 	</div>
 	<div class="us benefits">
 		<div class="container">
-			<h2 class="us-title">Преимущества компании КупелиСпа</h2>
-			<div class="row">
-
+			<h2 class="us-title">Преимущества КупелиСпа</h2>
+			<div class="row benefits-items">
 				<div class="col-sm-6">
-					<div class="row benefits-item">
+					<div class="row no-gutters align-items-center benefits-item">
 						<div class="col-auto">
-							<img src="assets/img/benefits/radar.png" class="image" alt=""
-								style="box-shadow: 0 0 10px 0 rgba(255,69,0,.5);border-radius: 100px;max-width: 80px;padding: 15px;">
+							<img src="assets/img/benefits/shop.svg" class="image" alt="Широкий ассортимент" width="87" height="87">
 						</div>
 						<div class="col">
 							<span class="benefits-title">Широкий ассортимент</span>
+						</div>
+						<div class="col-12 benefits-description">
 							<p>В нашем интернет-каталоге вы сможете найти подходящую для вас модель. Мы предлагаем вашему вниманию как
 								стандартные купели для бани, так и модели с подогревом, которые можно легко разместить на террасе или на
 								заднем дворе, и использовать в любое время года. Размеры наших купелей варьируются от небольших
@@ -1728,13 +1784,14 @@
 					</div>
 				</div>
 				<div class="col-sm-6">
-					<div class="row benefits-item">
+					<div class="row no-gutters align-items-center benefits-item">
 						<div class="col-auto">
-							<img src="assets/img/benefits/factory.png" class="image" alt=""
-								style="box-shadow: 0 0 10px 0 rgba(255,69,0,.5);border-radius: 100px;max-width: 80px;padding: 15px;">
+							<img src="assets/img/benefits/diler.svg" class="image" alt="Официальный дилер" width="87" height="87">
 						</div>
 						<div class="col">
 							<span class="benefits-title">Официальный дилер</span>
+						</div>
+						<div class="col-12 benefits-description">
 							<p>Наша компания является официальным представителем бренда Polarspa в Республике Беларусь. Компания
 								КупелиСпа обладает всей полнотой информации о продукции Polarspa. Наши специалисты посещали
 								производство, и убедились в том, что качество бренда соответствует европейским стандартам.</p>
@@ -1742,28 +1799,29 @@
 					</div>
 				</div>
 				<div class="col-sm-6">
-					<div class="row benefits-item">
+					<div class="row no-gutters align-items-center benefits-item">
 						<div class="col-auto">
-							<img src="assets/img/benefits/shield.png" class="image" alt=""
-								style="box-shadow: 0 0 10px 0 rgba(255,69,0,.5);border-radius: 100px;max-width: 80px;padding: 15px;">
+							<img src="assets/img/benefits/cristal.svg" class="image" alt="Качество" width="87" height="87">
 						</div>
 						<div class="col">
 							<span class="benefits-title">Качество</span>
+						</div>
+						<div class="col-12 benefits-description">
 							<p>Наши купели изготовлены из качественного композитного материала согласно последним европейским
 								технологиям. В отличие от пластиковых и деревянных купелей, купели Polarspa устойчивы к резким перепадам
 								температур и повышенной влажности.</p>
 						</div>
 					</div>
 				</div>
-
 				<div class="col-sm-6">
-					<div class="row benefits-item">
+					<div class="row no-gutters align-items-center benefits-item">
 						<div class="col-auto">
-							<img src="assets/img/benefits/settings.png" class="image" alt=""
-								style="box-shadow: 0 0 10px 0 rgba(255,69,0,.5);border-radius: 100px;max-width: 80px;padding: 15px;">
+							<img src="assets/img/benefits/box.svg" class="image" alt="" width="87" height="87">
 						</div>
 						<div class="col">
 							<span class="benefits-title">Всё включено</span>
+						</div>
+						<div class="col-12 benefits-description">
 							<p>В комплект поставки композитной купели Polarspa входит удобная лестница с двумя ступенями, а также всё,
 								что необходимо для её монтажа. Возможна доставка или самовывоз.</p>
 						</div>
@@ -1775,25 +1833,23 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-12">
+				<div class="col flex-shrink-1">
 					<div class="footer-info">
-						<div class="footer-logo"><img src="assets/img/white logo.png" class="image" alt="Купели Лого"
-								style="max-width: 150px;"></div>
-						<a href="#zvonok" class="btn btn-js foot" data-fancybox data-btn="заказать звонок низ страницы">Заказать
-							звонок</a>
-						<p style="max-width: 350px;font-size: 10px;">Cайт носит исключительно информационный характер и ни при каких
+						<div class="footer-logo">
+							<img src="assets/img/logo.svg" class="image" alt="Купели Лого" width="117" height="22">
+						</div>
+						<p class="footer-disclaimer">Cайт носит исключительно информационный характер и ни при каких
 							условиях не является публичной офертой.</p>
 						<!--<ul class="footer-soc-list flex">
-					<li><a href="//www.instagram.com/polar_spa/" target="_blank" class="footer-soc footer-soc-instagram"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="//vk.com/kupeliru" target="_blank" class="footer-soc footer-soc-vk"><i class="fa fa-vk"></i></a></li>
-					<li><a href="//www.facebook.com/kupeliru/" target="_blank" class="footer-soc footer-soc-facebook"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="//ok.ru/group/54095102083216" target="_blank" class="footer-soc footer-soc-odnoklassniki"><i class="fa fa-odnoklassniki"></i></a></li>
-					<li><a href="https://www.youtube.com/user/BelorussiaPools" target="_blank" class="footer-soc footer-soc-youtube"><i class="fa fa-youtube"></i></a></li>
-</ul>-->
-
+							<li><a href="//www.instagram.com/polar_spa/" target="_blank" class="footer-soc footer-soc-instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="//vk.com/kupeliru" target="_blank" class="footer-soc footer-soc-vk"><i class="fa fa-vk"></i></a></li>
+							<li><a href="//www.facebook.com/kupeliru/" target="_blank" class="footer-soc footer-soc-facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="//ok.ru/group/54095102083216" target="_blank" class="footer-soc footer-soc-odnoklassniki"><i class="fa fa-odnoklassniki"></i></a></li>
+							<li><a href="https://www.youtube.com/user/BelorussiaPools" target="_blank" class="footer-soc footer-soc-youtube"><i class="fa fa-youtube"></i></a></li>
+						</ul>-->
 					</div>
 				</div>
-				<div class="col-md1 col-sm-3">
+				<!-- <div class="col-md1 col-sm-3">
 					<nav class="footer-nav" style="padding-top: 25px;">
 						<ul class="">
 							<li class="first"><a href="katalog/">Каталог</a></li>
@@ -1801,14 +1857,73 @@
 							<li class="last"><a href="kontakti">Контакты</a></li>
 						</ul>
 					</nav>
+				</div> -->
+				<div class="col-md-auto">
+					<div class="d-flex footer-item">
+						<svg class="" width="18" height="18">
+							<use href="assets/img/sprite.svg#clock">
+						</svg><span>Ежедневно с 10:00 до 19:00</span>
+					</div>
+					<div class="footer-item">
+						<a href="mailto:info@kupelispa.by" class="d-flex">
+							<svg class="" width="18" height="18">
+								<use href="assets/img/sprite.svg#email">
+							</svg><span>info@kupelispa.by</span>
+						</a>
+					</div>
 				</div>
-				<div class="col-md1 col-sm-5">
-					<div class="footer-info" style="padding-top: 25px;">
-						<span><i class="fa fa-map-marker"></i>г. Минск, пр-т Дзержинского, д. 125 а, офис 65 б</span>
-						<a href="tel:+375296400633" class="mgo-number"><i class="fa fa-phone"></i>+375 (29) 640-06-33</a>
-						<span><a href="mailto:info@kupelispa.by" target="_blank"><i
-									class="fa fa-envelope-o"></i>info@kupelispa.by</a></span>
-						<span><i class="fa fa-clock-o"></i>Ежедневно: 9:00-20:00</span>
+				<div class="col-md-auto">
+					<div class="footer-info">
+						<div class="d-flex justify-content-end align-items-center footer-item">
+							<svg class="" width="18" height="18">
+								<use href="assets/img/sprite.svg#marker">
+							</svg><span>г. Минск, пр-т Дзержинского, д. 125 а, офис 65б</span>
+						</div>
+						<div class="d-flex justify-content-end align-items-center footer-item">
+							<svg class="" width="18" height="18">
+								<use href="assets/img/sprite.svg#marker">
+							</svg><span>г. Минск, пр-т Дзержинского, д. 125 а, офис 65б</span>
+						</div>
+					</div>
+				</div>
+				<div class="col flex-shrink-1">
+					<div class="row">
+						<div class="col-12 d-flex justify-content-end align-items-center footer-item">
+							<a class="header-icon" href="https://whatsapp.com">
+								<svg class="" width="24" height="24">
+									<use href="assets/img/sprite.svg#whatsapp">
+								</svg>
+							</a>
+							<a class="header-icon" href="https://telegram.org">
+								<svg class="" width="24" height="24">
+									<use href="assets/img/sprite.svg#telegram">
+								</svg>
+							</a>
+							<a class="header-icon" href="https://viber.com">
+								<svg class="" width="24" height="24">
+									<use href="assets/img/sprite.svg#viber">
+								</svg>
+							</a>
+							<a href="tel:+375296400633" class="mgo-number">+375 (29) 640-06-33</a>
+						</div>
+						<div class="col-12 d-flex justify-content-end align-items-center footer-item">
+							<a href="tel:+375296400633" class="mgo-number">+375 (29) 640-06-33</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 footer-call">
+					<div class="row">
+						<div class="col-auto ml-auto">
+							<a href="#zvonok" class="btn" data-fancybox data-btn="заказать звонок низ страницы">Заказать
+								звонок</a>
+						</div>
+						<div class="col-auto">
+							<a class="header-icon" href="https://instagram.com">
+								<svg class="" width="40" height="40">
+									<use href="assets/img/sprite.svg#instagram">
+								</svg>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
