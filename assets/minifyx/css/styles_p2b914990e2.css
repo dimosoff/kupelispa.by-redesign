@@ -435,7 +435,7 @@ body.scrolled .header {
 }
 .header .fa {
   font-size: 20px;
-  color: #d76a03;
+  color: #7E9A8E;
   margin-right: 8px;
 }
 .header-item {
@@ -471,7 +471,7 @@ body.scrolled .topline {
   transform: translateY(-100%);
 }
 .topline i {
-  color: #d76a03;
+  color: #7E9A8E;
 }
 .topline a.mgo-number {
   margin-left: 8px;
@@ -742,7 +742,7 @@ body.scrolled .topline {
   margin-top: 5px;
 }
 .main-offer-price {
-  color: #d76a03;
+  color: #7E9A8E;
   display: block;
   font-size: 34px;
   font-weight: 700;
@@ -753,7 +753,7 @@ body.scrolled .topline {
   font-size: 24px;
   font-weight: 700;
   text-decoration: line-through;
-  color: #d76a03;
+  color: #7E9A8E;
 }
 .main-offer-price-econom {
   background-color: #ffe143;
@@ -989,7 +989,7 @@ body.scrolled .topline {
 .breadcrumbs li.current a,
 .breadcrumbs li.current span,
 .breadcrumbs li.active {
-  color: #d76a03;
+  color: #7E9A8E;
 }
 .breadcrumbs .separator {
   margin-right: 1rem;
@@ -1067,7 +1067,7 @@ body.scrolled .topline {
 }
 .calc input[type="radio"]:checked + label:before {
   background-image: url(../img/check_mark.png);
-  border: 1px solid #d76a03;
+  border: 1px solid #7E9A8E;
   -webkit-background-size: contain;
   background-size: contain;
 }
@@ -1166,7 +1166,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-right: 0;
 }
 .katalog-price span {
-  color: #d76a03;
+  color: #7E9A8E;
   font-weight: 700;
   display: inline-block;
 }
@@ -1191,7 +1191,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .product-price {
   font-size: 20px;
-  color: #d76a03;
+  color: #7E9A8E;
   font-weight: 600;
 }
 .product-price-box {
@@ -1240,7 +1240,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 2rem;
 }
 .fotorama__thumb-border {
-  border-color: #d76a03;
+  border-color: #7E9A8E;
 }
 .fotorama__caption__wrap {
   background-color: #f9f9f9;
@@ -1313,7 +1313,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-right: 10px;
 }
 .footer-soc-list a:hover {
-  background-color: #d76a03;
+  background-color: #7E9A8E;
   color: #fff;
 }
 .footer-soc {
@@ -1414,7 +1414,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding-left: 2rem;
 }
 .site-map a:hover {
-  color: #d76a03;
+  color: #7E9A8E;
   text-decoration: underline;
 }
 .benefits {
@@ -1485,7 +1485,7 @@ input[type="number"]::-webkit-outer-spin-button {
   right: 0;
   height: 2px;
   width: 140%;
-  background-color: #d76a03;
+  background-color: #7E9A8E;
 }
 #hidden-content span,
 #zvonok span {
@@ -1504,7 +1504,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 #hidden-content input[type="submit"],
 #zvonok input[type="submit"] {
-  background-color: #d76a03;
+  background-color: #7E9A8E;
   margin-top: 3rem;
   border: none;
   cursor: pointer;
@@ -1550,7 +1550,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .otziv-stars {
   padding-left: 20px;
-  color: #d76a03;
+  color: #7E9A8E;
   font-size: 20px;
 }
 .owl-carousel .owl-nav button.owl-next,
@@ -2109,8 +2109,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .pagination > .active > span:focus {
   z-index: 3;
   color: white;
-  background-color: #d76a03;
-  border-color: #d76a03;
+  background-color: #7E9A8E;
+  border-color: #7E9A8E;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -2364,7 +2364,7 @@ ul.submenu li ul:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d76a03;
+  background: #7E9A8E;
 }
 .blogm {
   padding: 14rem 0;
@@ -2443,7 +2443,7 @@ ul.submenu li ul:hover {
   padding-bottom: 20px;
 }
 .kont a {
-  color: #d76a03;
+  color: #7E9A8E;
 }
 @media (min-width: 768px) {
   .kont .col-md-3 {
@@ -2525,7 +2525,7 @@ span.old_price {
 .page-item.nex a,
 .page-item.pr a,
 .page-item.disabled a {
-  color: #d76a03;
+  color: #7E9A8E;
 }
 .komp {
   display: block;
