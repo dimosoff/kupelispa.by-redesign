@@ -18,7 +18,7 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
-	<link href="assets/css/magnific-popup.css" rel="stylesheet" />
+	<!-- <link href="assets/css/magnific-popup.css" rel="stylesheet" /> -->
 	<meta name="yandex-verification" content="97d41b4038e2d9f1" />
 	<meta name="google-site-verification" content="i7hFks6K-zHz3WX0CeZkVXxqSB1ElpLQVhbFvugi_vM">
 
@@ -28,14 +28,16 @@
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
 		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="assets/components/minishop2/css/web/default.css?v=e2bdf7f5a6" type="text/css">
-	<link rel="stylesheet" href="assets/components/minishop2/css/web/lib/jquery.jgrowl.min.css" type="text/css">
+	<link rel="stylesheet" href="https://kupelispa.by/assets/components/minishop2/css/web/default.css?v=e2bdf7f5a6"
+		type="text/css">
+	<link rel="stylesheet" href="https://kupelispa.by/assets/components/minishop2/css/web/lib/jquery.jgrowl.min.css"
+		type="text/css">
 	<script>miniShop2Config = { "close_all_message": "\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435", "cssUrl": "\assets\/components\/minishop2\/css\/web\/", "jsUrl": "\assets\/components\/minishop2\/js\/web\/", "actionUrl": "\assets\/components\/minishop2\/action.php", "ctx": "web", "price_format": [2, ".", " "], "price_format_no_zeros": true, "weight_format": [3, ".", " "], "weight_format_no_zeros": true };</script>
-	<link rel="stylesheet" href="assets/components/msearch2/css/web/default.css" type="text/css">
+	<link rel="stylesheet" href="https://kupelispa.by/assets/components/msearch2/css/web/default.css" type="text/css">
 
 	<script
 		type="text/javascript">mse2Config = { "cssUrl": "\assets\/components\/msearch2\/css\/web\/", "jsUrl": "\assets\/components\/msearch2\/js\/web\/", "actionUrl": "\assets\/components\/msearch2\/action.php", "queryVar": "query", "idVar": "id", "filter_delimeter": "|", "method_delimeter": ":", "values_delimeter": ",", "start_sort": "", "start_limit": "1", "start_page": 1, "start_tpl": "", "sort": "", "limit": "", "page": "", "pageVar": "page", "tpl": "", "parentsVar": "parents", "key": "417c993089e06ebb358056560128ca043a7068e6", "pageId": 1, "query": "", "parents": "", "aliases": [], "options": [], "mode": "", "moreText": "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0435\u0449\u0435" };</script>
-	<link rel="stylesheet" href="assets/components/ajaxform/css/default.css" type="text/css">
+	<link rel="stylesheet" href="https://kupelispa.by/assets/components/ajaxform/css/default.css" type="text/css">
 </head>
 
 <body>
@@ -438,73 +440,86 @@
 			<div class="title-wrap">
 				<h2 class="us-title">Калькулятор стоимости купелей</h2>
 			</div>
-			<div class="b-row">
-				<div class="calculator-cost__view"></div>
-				<div class="calculator-cost__complete">
-					<form action="/" method="post" id="mse2_filters" class="filters-f">
-						<div class="b-select" id="mse2_resource|pagetitle">
-							<select name="resource|pagetitle" id="resource|pagetitle_0">
-								<option>Модель</option>
-								<option value="Купель COMFORT 160 COLD" class="">COMFORT 160 COLD</option>
-								<option value="Купель COMFORT 160 HOT" class="">COMFORT 160 HOT</option>
-								<option value="Купель COMFORT COLD 195" class="">COMFORT COLD 195</option>
-								<option value="Купель COMFORT FAMILY COLD 220" class="">COMFORT FAMILY COLD 220</option>
-								<option value="Купель COMFORT FAMILY HOT 220" class="">COMFORT FAMILY HOT 220</option>
-								<option value="Купель COMFORT HOT 195" class="">COMFORT HOT 195</option>
-								<option value="Купель CORNER 130" class="">CORNER 130</option>
-								<option value="Купель CORNER 160" class="">CORNER 160</option>
-								<option value="Купель ELITE 220" class="">ELITE 220</option>
-								<option value="Купель ELITE QUATTRO 200" class="">ELITE QUATTRO 200</option>
-								<option value="Купель STANDART 68" class="">STANDART 68</option>
-								<option value="Купель STANDART 79" class="">STANDART 79</option>
-								<option value="Купель STANDART 98" class="">STANDART 98</option>
-							</select>
-							<svg class="hover-arrow" width="18" height="18">
-								<use href="assets/img/sprite.svg#arrow-down">
-							</svg>
+			<div class="row" id="mse2_results">
+				<div class="col-md-5 calculator-cost__view">
+					<div class="calculator-cost__wrapper">
+						<div class="calculator-cost__view-img" id="a1291">
+							<picture>
+								<img src="doc/images/product/elit-220.png" alt="Купель ELITE 220 Термососна">
+							</picture>
 						</div>
-					</form>
-				</div>
-			</div>
-			<div class="b-row" id="mse2_results">
-				<div class="calculator-cost__view">
-					<div class="calculator-cost__view-img" id="a1291">
-						<picture>
-							<img src="doc/images/product/elit-220.png" alt="Купель ELITE 220 Термососна">
-						</picture>
-					</div>
-					<div class="calculator-cost__view-img" id="a1292" hidden>
-						<picture>
-							<img src="doc/images/product/elit-220-ash.png" alt="Купель ELITE 220 Термоясень">
-						</picture>
-					</div>
-					<div class="calculator-cost__view-desc">
-						<p>
-						<p>
-							<b>Форма:</b>
-							круглая
-						</p>
-						</p>
-						<p>
-						<p>
-							<b>Вместимость:</b>
-							6-8 чел.
-						</p>
-						</p>
-						<p>
-						<p>
-							<b>Печь:</b>
-							с подогревом - печь интегрированная
-						</p>
-						</p>
+						<div class="calculator-cost__view-img" id="a1292" hidden>
+							<picture>
+								<img src="doc/images/product/elit-220-ash.png" alt="Купель ELITE 220 Термоясень">
+							</picture>
+						</div>
+						<div class="calculator-cost__view-title">ELITE QUATTRO 200</div>
+						<div class="row calculator-cost__view-desc">
+							<div class="col-sm-6 d-flex align-items-center">
+								<svg class="calculator-cost__icon" width="19" height="19">
+									<use href="assets/img/sprite.svg#width">
+								</svg><p><b>Размер:</b> 200x200 см</p>
+							</div>
+							<div class="col-sm-6 d-flex align-items-center">
+								<svg class="calculator-cost__icon" width="19" height="19">
+									<use href="assets/img/sprite.svg#weight">
+								</svg><p><b>Вес:</b> 280 кг</p>
+							</div>
+							<div class="col-sm-6 d-flex align-items-center">
+								<svg class="calculator-cost__icon" width="19" height="19">
+									<use href="assets/img/sprite.svg#height">
+								</svg><p><b>Высота:</b> 110 см</p>
+							</div>
+							<div class="col-sm-6 d-flex align-items-center">
+								<svg class="calculator-cost__icon" width="19" height="19">
+									<use href="assets/img/sprite.svg#person">
+								</svg><p><b>Вместимость:</b> 6 чел</p>
+							</div>
+							<div class="col-sm-6 d-flex align-items-center">
+								<svg class="calculator-cost__icon" width="19" height="19">
+									<use href="assets/img/sprite.svg#drop">
+								</svg><p><b>Объем:</b> 1500 л</p>
+							</div>
+							<div class="col-sm-6 d-flex align-items-center">
+								<svg class="calculator-cost__icon" width="19" height="19">
+									<use href="assets/img/sprite.svg#fire">
+								</svg><p><b>Подогрев:</b> да</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- complete  -->
-				<div class="calculator-cost__complete">
+				<div class="col-md-7 calculator-cost__complete">
+					<div class="calculator-cost__complete-row vt-center">
+						<div class="calculator-cost__complete-title">Выберите модель:</div>
+						<form action="/" method="post" id="mse2_filters" class="filters-f">
+							<div class="b-select" id="mse2_resource|pagetitle">
+								<select name="resource|pagetitle" id="resource|pagetitle_0">
+									<option>Модель</option>
+									<option value="Купель COMFORT 160 COLD" class="">COMFORT 160 COLD</option>
+									<option value="Купель COMFORT 160 HOT" class="">COMFORT 160 HOT</option>
+									<option value="Купель COMFORT COLD 195" class="">COMFORT COLD 195</option>
+									<option value="Купель COMFORT FAMILY COLD 220" class="">COMFORT FAMILY COLD 220</option>
+									<option value="Купель COMFORT FAMILY HOT 220" class="">COMFORT FAMILY HOT 220</option>
+									<option value="Купель COMFORT HOT 195" class="">COMFORT HOT 195</option>
+									<option value="Купель CORNER 130" class="">CORNER 130</option>
+									<option value="Купель CORNER 160" class="">CORNER 160</option>
+									<option value="Купель ELITE 220" class="">ELITE 220</option>
+									<option value="Купель ELITE QUATTRO 200" class="">ELITE QUATTRO 200</option>
+									<option value="Купель STANDART 68" class="">STANDART 68</option>
+									<option value="Купель STANDART 79" class="">STANDART 79</option>
+									<option value="Купель STANDART 98" class="">STANDART 98</option>
+								</select>
+								<svg class="hover-arrow" width="18" height="18">
+									<use href="assets/img/sprite.svg#arrow-down">
+								</svg>
+							</div>
+						</form>
+					</div>
 					<!-- row -->
 					<div class="calculator-cost__complete-row vt-center">
+						<div class="calculator-cost__complete-title">Выберите отделку:</div>
 						<div class="calculator-cost__checkboxes  checkboxes vt-center">
-							<div class="checkboxes__title">Отделка:</div>
 							<div class="checkboxes__list">
 								<label class="b-radio b-radio--img">
 									<input class="b-radio__input" type="radio" name="finishing" value="термососна" data-type-legal checked
@@ -649,7 +664,6 @@
 				</div>
 				<script>
 					function calc() {
-
 						var option1 = document.querySelector('input[name=option1]');
 						var option2 = document.querySelector('input[name=option2]');
 						var option3 = document.querySelector('input[name=option3]');
@@ -1873,12 +1887,12 @@
 	<script src="assets/minifyx/js/scripts_p2b7592c6ab.js"></script>
 	<script src="assets/minifyx/js/redesign.js"></script>
 
-	<script src="assets/components/minishop2/js/web/default.js?v=e2bdf7f5a6"></script>
-	<script src="assets/components/minishop2/js/web/lib/jquery.jgrowl.min.js"></script>
-	<script src="assets/components/minishop2/js/web/message_settings.js"></script>
-	<script src="assets/components/msearch2/js/web/default.js"></script>
+	<script src="https://kupelispa.by/assets/components/minishop2/js/web/default.js?v=e2bdf7f5a6"></script>
+	<script src="https://kupelispa.by/assets/components/minishop2/js/web/lib/jquery.jgrowl.min.js"></script>
+	<script src="https://kupelispa.by/assets/components/minishop2/js/web/message_settings.js"></script>
+	<script src="https://kupelispa.by/assets/components/msearch2/js/web/default.js"></script>
 
-	<script src="assets/components/ajaxform/js/default.js"></script>
+	<script src="https://kupelispa.by/assets/components/ajaxform/js/default.js"></script>
 	<script
 		type="text/javascript">AjaxForm.initialize({ "assetsUrl": "\assets\/components\/ajaxform\/", "actionUrl": "\assets\/components\/ajaxform\/action.php", "closeMessage": "\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435", "formSelector": "form.ajax_form", "pageId": 1 });</script>
 </body>

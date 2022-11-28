@@ -9,7 +9,7 @@
 // Description: Makes an element on the page stick on the screen as you scroll
 //              It will only set the 'top' and 'position' of your element, you
 //              might need to adjust the width in some cases.
-
+/*
 (function (factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
@@ -286,7 +286,7 @@
     setTimeout(scroller, 0);
   });
 }));
-
+*/
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -315,10 +315,11 @@ $(function() {
 	});
 
 
-	$(".eTimer").eTimer({
+  if ($(".eTimer").length) {
+    $(".eTimer").eTimer({
 			etType: 2, etDate: "15.03.2019.0.0", etTitleText: "Успей купить:", etTitleSize: 18, etShowSign: 1, etSep: ":", etFontFamily: "inherit", etTextColor: "#111", etPaddingTB: 2, etPaddingLR: 2, etBackground: "#fff", etBorderSize: 0, etBorderRadius: 0, etBorderColor: "white", etShadow: " none", etLastUnit: 4, etNumberFontFamily: "inherit", etNumberSize: 17, etNumberColor: "white", etNumberPaddingTB: 2, etNumberPaddingLR: 4, etNumberBackground: "#CF0A17", etNumberBorderSize: 0, etNumberBorderRadius: 0, etNumberBorderColor: "white", etNumberShadow: "none"
 		});
-
+  }
 	$("a[href='#catalog']").click(function () {
 		var _href = $(this).attr("href");
 		$("html, body").animate({ scrollTop: $(_href).offset().top - 150 });
@@ -339,9 +340,9 @@ $(function() {
 	});
 
 	//Липкая шапка
-	$(".topnav").sticky({
-		zIndex: 999
-	});
+	// $(".topnav").sticky({
+	// 	zIndex: 999
+	// });
 
 	//Мобильное меню - бургер
 	$(".toggle-mnu").click(function () {
