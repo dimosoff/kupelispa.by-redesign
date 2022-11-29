@@ -321,8 +321,9 @@ $(function() {
 		});
   }
 	$("a[href='#catalog']").click(function () {
-		var _href = $(this).attr("href");
-		$("html, body").animate({ scrollTop: $(_href).offset().top - 150 });
+		var thisTarget = $('#catalog');
+    if (!thisTarget.length) return false;
+		$("html, body").animate({ scrollTop: thisTarget.offset().top - 150 });
 		return false;
 	});
 
@@ -347,7 +348,7 @@ $(function() {
 	//Мобильное меню - бургер
 	$(".toggle-mnu").click(function () {
 		$(this).toggleClass("on");
-		$(".mobnav").slideToggle();
+		$(".topline").toggleClass("active");
 		return false;
 	});
 
