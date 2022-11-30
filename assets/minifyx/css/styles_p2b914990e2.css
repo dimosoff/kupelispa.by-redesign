@@ -2659,6 +2659,9 @@ svg {
     max-height: 500px;
     visibility: visible;
   }
+  .header-search form {
+    padding-top: 34px;
+  }
   .main {
     padding-top: 60px;
   }
@@ -2801,6 +2804,14 @@ svg {
   }
   .topline {
     width: 100%;
+  }
+  .header-search form {
+    left: -20px;
+    right: -20px;
+  }
+  .header-search form::before {
+    bottom: -14px;
+    border-radius: 0;
   }
   .main-item-text h1 {
     font-size: 24px;
