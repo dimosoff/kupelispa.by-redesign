@@ -345,14 +345,6 @@ $(function() {
 	// 	zIndex: 999
 	// });
 
-	//Мобильное меню - бургер
-	$(".toggle-mnu").click(function () {
-		$(this).toggleClass("on");
-		$(".topline").toggleClass("active");
-		return false;
-	});
-
-
 	//Калькулятор мб отдельно
 	$('.calc input').on('change', function(){
 		let pathM = $('.calc-model:checked').attr('data-path');

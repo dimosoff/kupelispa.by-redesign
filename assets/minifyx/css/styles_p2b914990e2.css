@@ -451,9 +451,11 @@ h2 {
   display: block;
   padding: 5px;
   width: 35px;
+  color: inherit;
+  border: none;
   height: 30px;
   z-index: 100;
-  color: inherit;
+  background: none;
   margin-left: 18px;
 }
 .toggle-mnu span:after,
@@ -1783,6 +1785,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .sisea-search-form input#search {
   width: 100%;
+  color: inherit;
   padding: 5px 40px 5px 1px;
   font-weight: 500;
   border-radius: 0;
