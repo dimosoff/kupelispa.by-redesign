@@ -835,6 +835,7 @@ h2 {
   overflow: hidden;
 }
 .us-title {
+  font-size: 26px;
   text-align: center;
   margin-bottom: 7rem;
 }
@@ -1123,6 +1124,9 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 14px;
   box-shadow: 0 0 33px rgba(0, 0, 0, 0.05);
 }
+.footer-wrapper > * {
+  margin-bottom: 2rem;
+}
 .footer-disclaimer {
   margin-top: 2rem;
   max-width: 210px;
@@ -1135,9 +1139,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .footer-item svg + span {
   margin-left: 7px;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
 }
 .footer p {
-  font-size: 10px;
+  font-size: 12px;
 }
 .footer a:not(.btn) {
   color: inherit;
@@ -1147,9 +1153,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .footer a.mgo-number {
   margin-left: 8px;
-}
-.footer-call {
-  margin-top: 2rem;
 }
 .footer-title {
   display: block;
@@ -1241,7 +1244,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .footer .copy {
   font-size: 14px;
-  margin-top: 34px;
+  margin-top: 14px;
   border-top: 1px solid #E5E5E5;
   padding-top: 29px;
 }
@@ -1319,56 +1322,70 @@ input[type="number"]::-webkit-outer-spin-button {
 .benefits.rev .benefits-title {
   font-size: 18px;
 }
-.fancybox-content {
-  padding: 8rem 12rem;
+.ajax_form {
+  max-width: 470px;
+}
+.ajax_form .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.ajax_form .row > [class^="col"] {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.ajax_form input:not([type="submit"]),
+.ajax_form textarea {
+  border-radius: 10px;
+  display: block;
+  padding: 10px 12px;
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.ajax_form textarea {
+  resize: none;
+  height: 120px;
+}
+.ajax_form input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  border: none;
+  display: inline-block;
+  accent-color: #7e9a8e;
+  background-color: #fff;
+}
+.ajax_form input[type="checkbox"] ~ span {
+  font-size: 12px;
+}
+.ajax_form input[type="submit"] {
+  width: 200px;
+  margin-top: 10px;
 }
 #hidden-content,
 #zvonok {
   display: none;
 }
-#hidden-content .modal-title,
-#zvonok .modal-title {
-  font-size: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1.2;
-  position: relative;
-  padding-bottom: 3rem;
+.fancybox-content {
+  margin: 0 20px;
+  padding: 9rem 8rem;
+  background-color: #F7F6F4;
 }
-#hidden-content .modal-title:after,
-#zvonok .modal-title:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  bottom: 2rem;
-  right: 0;
-  height: 2px;
-  width: 140%;
-  background-color: #7E9A8E;
+.fancybox-close-small {
+  width: 70px;
+  height: 70px;
 }
-#hidden-content span,
-#zvonok span {
-  font-style: italic;
-  color: #000;
-  font-size: 18px;
+.fancybox-content .modal-title {
+  max-width: 400px;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
 }
-#hidden-content input,
-#zvonok input {
-  display: block;
-  border: 1px solid #211f1f;
-  padding: 12px;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  width: 320px;
-}
-#hidden-content input[type="submit"],
-#zvonok input[type="submit"] {
-  background-color: #7E9A8E;
-  margin-top: 3rem;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  color: #fff;
+.fancybox-content input[type="submit"] {
+  margin-left: auto;
+  margin-right: auto;
 }
 .otziv {
   display: -ms-flexbox;
@@ -1470,51 +1487,9 @@ input[type="number"]::-webkit-outer-spin-button {
   justify-content: center;
   height: 100%;
 }
-.forma-box .row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-.forma-box .row > [class^="col"] {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 20px;
-}
 .forma-box .us-title {
   text-align: left;
   margin-bottom: 7rem;
-}
-.forma-box form {
-  max-width: 470px;
-}
-.forma-box input:not([type="submit"]),
-.forma-box textarea {
-  border-radius: 10px;
-  display: block;
-  padding: 10px 12px;
-  border: none;
-  width: 100%;
-  height: 40px;
-  font-size: 12px;
-  font-weight: 400;
-}
-.forma-box textarea {
-  resize: none;
-  height: 120px;
-}
-.forma-box input[type="checkbox"] {
-  width: 14px;
-  height: 14px;
-  border: none;
-  display: inline-block;
-  accent-color: #7e9a8e;
-  background-color: #fff;
-}
-.forma-box input[type="checkbox"] ~ span {
-  font-size: 12px;
-}
-.forma-box input[type="submit"] {
-  width: 200px;
-  margin-top: 10px;
 }
 .gallery-imgs {
   display: -ms-flexbox;
@@ -2582,6 +2557,17 @@ svg {
   .blogm {
     padding: 8rem 0;
   }
+  .footer-icon + .mgo-number {
+    margin-top: 16px;
+  }
+  .footer a.mgo-number {
+    width: 100%;
+    margin-left: 0;
+  }
+  .footer-item .footer-icon svg {
+    width: 38px;
+    height: 38px;
+  }
 }
 @media (min-width: 992px) {
   .header-icon {
@@ -2703,6 +2689,9 @@ svg {
   .calculator-cost__description {
     font-size: 15px;
   }
+  .fancybox-content {
+    padding: 7rem 6rem;
+  }
   .forma .image-wrapper {
     margin-right: calc(-50vw + 345px); /* calc(-50vw + (720px * 0.5) - 15px) */
   }
@@ -2759,6 +2748,9 @@ svg {
   .calculator-cost__total {
     margin-top: 26px;
   }
+  .fancybox-content {
+    padding: 5rem 4rem;
+  }
   .forma-box {
     padding: 5rem 0 3rem;
   }
@@ -2794,6 +2786,12 @@ svg {
   }
   .benefits-item {
     margin-bottom: 3rem;
+  }
+  .benefits-item img {
+    max-width: 67px;
+  }
+  .footer {
+    padding-top: 4rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -2849,6 +2847,13 @@ svg {
   .calculator-cost__description {
     font-size: 14px;
   }
+  .fancybox-content {
+    padding: 4rem 3rem 3rem;
+  }
+  .fancybox-close-small {
+    width: 60px;
+    height: 60px;
+  }
   .forma-box {
     padding: 3rem 0 1rem;
   }
@@ -2882,11 +2887,16 @@ svg {
   .benefits-item {
     margin-bottom: 2rem;
   }
-  .benefits-item img {
-    max-width: 67px;
-  }
   .benefits-description {
     margin-top: 10px;
+  }
+  .footer {
+    padding-top: 3rem;
+  }
+  .footer .copy {
+    margin-top: 4px;
+    text-align: center;
+    padding-top: 19px;
   }
 }
 @media (max-width: 370px) {

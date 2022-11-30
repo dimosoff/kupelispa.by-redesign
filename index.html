@@ -1668,12 +1668,12 @@
 							<input type="hidden" name="page" value="Главная">
 							<input type="hidden" name="forma" value="Центральная форма">
 							<div class="row">
-								<label class="col-md-6">
+								<label class="col-12">
 									<span class="sr-only">Имя</span>
 									<input type="text" required placeholder="Имя" name="name">
 									<span class="error_name"></span>
 								</label>
-								<label class="col-md-6">
+								<label class="col-12">
 									<span class="sr-only">Телефон</span>
 									<input type="tel" required placeholder="Телефон" name="phone">
 									<span class="error_phone"></span>
@@ -1831,8 +1831,8 @@
 	</div>
 	<footer class="footer">
 		<div class="container">
-			<div class="row">
-				<div class="col flex-shrink-1">
+			<div class="row justify-content-between footer-wrapper">
+				<div class="col-md-7 col-lg-auto col-xl flex-shrink-1">
 					<div class="footer-info">
 						<div class="footer-logo">
 							<img src="assets/img/logo.svg" class="image" alt="Купели Лого" width="117" height="22">
@@ -1857,7 +1857,7 @@
 						</ul>
 					</nav>
 				</div> -->
-				<div class="col-md-auto">
+				<div class="col-md-5 col-lg-auto">
 					<div class="d-flex footer-item">
 						<svg class="" width="18" height="18">
 							<use href="assets/img/sprite.svg#clock">
@@ -1871,7 +1871,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-auto">
+				<div class="col-md-7 col-lg-auto">
 					<div class="footer-info">
 						<div class="d-flex flex-wrap justify-content-xl-end align-items-center footer-item">
 							<svg class="" width="18" height="18">
@@ -1885,20 +1885,20 @@
 						</div>
 					</div>
 				</div>
-				<div class="col flex-shrink-1">
+				<div class="col-md-5 col-lg-auto col-xl flex-shrink-1">
 					<div class="row">
 						<div class="col-12 d-flex flex-wrap justify-content-xl-end align-items-center footer-item">
-							<a class="header-icon" href="https://whatsapp.com">
+							<a class="footer-icon" href="https://whatsapp.com">
 								<svg class="" width="24" height="24">
 									<use href="assets/img/sprite.svg#whatsapp">
 								</svg>
 							</a>
-							<a class="header-icon" href="https://telegram.org">
+							<a class="footer-icon" href="https://telegram.org">
 								<svg class="" width="24" height="24">
 									<use href="assets/img/sprite.svg#telegram">
 								</svg>
 							</a>
-							<a class="header-icon" href="https://viber.com">
+							<a class="footer-icon" href="https://viber.com">
 								<svg class="" width="24" height="24">
 									<use href="assets/img/sprite.svg#viber">
 								</svg>
@@ -1910,14 +1910,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 footer-call">
+				<div class="col-md col-lg-auto col-xl-12 footer-call">
 					<div class="row">
-						<div class="col-auto ml-auto">
+						<div class="col-auto ml-lg-auto">
 							<a href="#zvonok" class="btn" data-fancybox data-btn="заказать звонок низ страницы">Заказать
 								звонок</a>
 						</div>
 						<div class="col-auto">
-							<a class="header-icon" href="https://instagram.com">
+							<a class="footer-icon" href="https://instagram.com">
 								<svg class="" width="40" height="40">
 									<use href="assets/img/sprite.svg#instagram">
 								</svg>
@@ -1929,12 +1929,12 @@
 		</div>
 		<div class="copy">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
+				<div class="row flex-column flex-md-row justify-content-between">
+					<div class="col-auto">
 						<p>© 2020 – 2022. КупелиСПА - Все для бани и сауны.</p>
 					</div>
-					<div class="col-md-6 col-sm-12">
-						<p style="text-align: right;"><a href="https://cweb.by/" target="_blank">Создание и продвижение cweb.by</a>
+					<div class="mt-3 mt-md-0 col-auto">
+						<p><a href="https://cweb.by/" target="_blank">Создание и продвижение cweb.by</a>
 						</p>
 					</div>
 				</div>
@@ -1943,52 +1943,77 @@
 	</footer>
 
 	<div id="hidden-content">
-		<p class="modal-title">Заполните данные <br>и мы свяжемся с вами</p>
 		<form action="" method="post" id="formprod" class="ajax_form" onsubmit="yaCounter51284014.reachGoal('goal');">
 			<input type="hidden" name="page" value="Главная">
 			<input type="hidden" name="forma" value="Всплывающая форма">
 			<input type="hidden" name="forma-id" value="" class="form_name">
-			<input type="text" placeholder="Ваше имя" name="name">
-			<input type="tel" required placeholder="Ваш телефон" name="phone">
-			<span class="error_phone"></span>
-			<input type="email" placeholder="Ваш e-mail" name="email">
-			<span class="error_email"></span>
-
-			<textarea id="af_message" name="message" class="form-control" rows="5" placeholder="Сообщение"
-				style="font-size: 2rem;width: 100%;padding: 12px;"></textarea>
-			<span class="error_message"></span><br>
-
-			<input type="checkbox" required checked name="option2" value="a2"
-				style="width: auto;padding-left: 5px;display: inline-block;box-shadow: none;"> <span style="font-size: 12px;">Я
-				согласен на обработку персональных данных</span><Br>
-
-			<input type="submit" value="Отправить">
-
+			<h3 class="us-title modal-title">Заполните данные<br> и мы свяжемся с вами</h3>
+			<div class="row">
+				<label class="col-12">
+					<span class="sr-only">Имя</span>
+					<input type="text" required placeholder="Имя" name="name">
+					<span class="error_name"></span>
+				</label>
+				<label class="col-12">
+					<span class="sr-only">Телефон</span>
+					<input type="tel" required placeholder="Телефон" name="phone">
+					<span class="error_phone"></span>
+				</label>
+				<label class="col-12">
+					<span class="sr-only">E-mail</span>
+					<input type="email" required placeholder="E-mail" name="email">
+					<span class="error_email"></span>
+				</label>
+				<label class="col-12">
+					<span class="sr-only">Комментарий</span>
+					<textarea placeholder="Комментарий" name="comment"></textarea>
+				</label>
+				<label class="col-12">
+					<input type="checkbox" required checked name="option2" value="a2">
+					<span>Я согласен на обработку персональных данных</span>
+				</label>
+				<div class="col-12">
+					<input class="btn" type="submit" value="Отправить">
+				</div>
+			</div>
 			<input type="hidden" name="af_action" value="d751a290114764d619bf869d5f3bdbd3" />
 		</form>
 	</div>
 
 	<div id="zvonok">
-		<p class="modal-title">Заполните данные <br>и мы свяжемся с вами</p>
 		<form action="" method="post" id="formprod_zv" class="ajax_form" onsubmit="yaCounter51284014.reachGoal('goal');">
 			<input type="hidden" name="page" value="Главная">
 			<input type="hidden" name="forma" value="Всплывающая форма">
 			<input type="hidden" name="forma-id" value="" class="form_name">
-			<input type="text" placeholder="Ваше имя" name="name">
-			<input type="tel" required placeholder="Ваш телефон" name="phone">
-			<span class="error_phone"></span>
-			<input type="email" placeholder="Ваш e-mail" name="email">
-			<span class="error_email"></span>
-
-			<textarea id="af_message" name="message" class="form-control" rows="5" placeholder="Сообщение"
-				style="font-size: 2rem;width: 100%;padding: 12px;"></textarea>
-			<span class="error_message"></span><br>
-
-			<input type="checkbox" required checked name="option2" value="a2"
-				style="width: auto;padding-left: 5px;display: inline-block;box-shadow: none;"> <span style="font-size: 12px;">Я
-				согласен на обработку персональных данных</span><Br>
-			<input type="submit" value="Отправить">
-
+			<h3 class="us-title modal-title">Заполните данные<br> и мы свяжемся с вами</h3>
+			<div class="row">
+				<label class="col-12">
+					<span class="sr-only">Имя</span>
+					<input type="text" required placeholder="Имя" name="name">
+					<span class="error_name"></span>
+				</label>
+				<label class="col-12">
+					<span class="sr-only">Телефон</span>
+					<input type="tel" required placeholder="Телефон" name="phone">
+					<span class="error_phone"></span>
+				</label>
+				<label class="col-12">
+					<span class="sr-only">E-mail</span>
+					<input type="email" required placeholder="E-mail" name="email">
+					<span class="error_email"></span>
+				</label>
+				<label class="col-12">
+					<span class="sr-only">Комментарий</span>
+					<textarea placeholder="Комментарий" name="comment"></textarea>
+				</label>
+				<label class="col-12">
+					<input type="checkbox" required checked name="option2" value="a2">
+					<span>Я согласен на обработку персональных данных</span>
+				</label>
+				<div class="col-12">
+					<input class="btn" type="submit" value="Отправить">
+				</div>
+			</div>
 			<input type="hidden" name="af_action" value="e42321d465991f1694bd6cd8c826cbcd" />
 		</form>
 	</div>
