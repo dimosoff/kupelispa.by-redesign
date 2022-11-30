@@ -5,8 +5,8 @@
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../../../assets/templates/polarspa/fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../../../assets/templates/polarspa/fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../../../assets/fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../../assets/fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-500 - latin_cyrillic */
@@ -16,8 +16,8 @@
   font-weight: 500;
   font-display: swap;
   src: local(''),
-       url('../../../assets/templates/polarspa/fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../../../assets/templates/polarspa/fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../../../assets/fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../../assets/fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-600 - latin_cyrillic */
@@ -27,8 +27,8 @@
   font-weight: 600;
   font-display: swap;
   src: local(''),
-       url('../../../assets/templates/polarspa/fonts/montserrat-v25-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../../../assets/templates/polarspa/fonts/montserrat-v25-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../../../assets/fonts/montserrat-v25-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../../../assets/fonts/montserrat-v25-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .owl-carousel,
@@ -469,8 +469,9 @@ h2 {
   top: 18px;
 }
 .toggle-mnu span {
-  position: relative;
   display: block;
+  position: relative;
+  margin-bottom: 16px;
 }
 .toggle-mnu span,
 .toggle-mnu span:after,
