@@ -320,10 +320,10 @@ $(function() {
 			etType: 2, etDate: "15.03.2019.0.0", etTitleText: "Успей купить:", etTitleSize: 18, etShowSign: 1, etSep: ":", etFontFamily: "inherit", etTextColor: "#111", etPaddingTB: 2, etPaddingLR: 2, etBackground: "#fff", etBorderSize: 0, etBorderRadius: 0, etBorderColor: "white", etShadow: " none", etLastUnit: 4, etNumberFontFamily: "inherit", etNumberSize: 17, etNumberColor: "white", etNumberPaddingTB: 2, etNumberPaddingLR: 4, etNumberBackground: "#CF0A17", etNumberBorderSize: 0, etNumberBorderRadius: 0, etNumberBorderColor: "white", etNumberShadow: "none"
 		});
   }
-	$("a[href='#catalog']").click(function () {
-		var thisTarget = $('#catalog');
-    if (!thisTarget.length) return false;
-		$("html, body").animate({ scrollTop: thisTarget.offset().top - 150 });
+	$("a[href='#calculator']").click(function () {
+		var thisTarget = $('#calculator');
+        if (!thisTarget.length) return false;
+		$("html, body").animate({ scrollTop: thisTarget.offset().top - 50 });
 		return false;
 	});
 
@@ -339,11 +339,6 @@ $(function() {
 				preload: true
 			},
 	});
-
-	//Липкая шапка
-	// $(".topnav").sticky({
-	// 	zIndex: 999
-	// });
 
 	//Калькулятор мб отдельно
 	$('.calc input').on('change', function(){
@@ -451,7 +446,7 @@ $(function() {
 
 	});
 
-
+/*
 	$('.owl-carousel').owlCarousel({
 		loop:true,
 		margin:20,
@@ -472,6 +467,58 @@ $(function() {
 			}
 		}	
 	});
+*/
+	// main chunk slider
+	var mainSlider = $('.main-slides');
+
+    if (mainSlider.length) {
+    	mainSlider.owlCarousel({
+    		loop: true,
+    		margin: 0,
+    		items: 1,
+    		dots: true,
+    		navText: ['<i class="left"></i>', '<i class="right"></i>'],
+    		autoplay: true,
+    		autoHeight: true,
+    		smartSpeed: 1500,
+    		autoplayTimeout: 9000,
+    		autoplayHoverPause: true,
+    		responsive : {
+    			0 : {
+    				items: 1,
+    				nav:false,
+    			},
+    			768 : {
+    				items: 1,
+    				nav:true,
+    			}
+    		}	
+    	});
+
+    	const intersectOptions = {
+          // root: document.querySelector( '#viewport' ),
+          rootMargin: "0px",
+          threshold: 0.2,
+        };
+        const slidersList = document.querySelectorAll('.main-slides');
+    
+        slidersList.forEach((item) => {
+          
+          const observer = new IntersectionObserver(manageIntersection, intersectOptions);
+          observer.observe(item);
+    
+          function manageIntersection(entries, observer) {
+            entries.forEach((item) => {
+              if (item.isIntersecting) {
+                mainSlider.trigger('play.owl.autoplay');
+              } else {
+                mainSlider.trigger('stop.owl.autoplay');
+              }
+              return;
+            });
+          }
+        });
+    }
 
 
 	//
@@ -479,7 +526,6 @@ $(function() {
 		var atr = $(this).attr('data-btn');
 		$('#hidden-content .form_name').val(atr);
 	});
-
 
 	//кнопка наверх
 	$("body").on("click", ".top", function () {

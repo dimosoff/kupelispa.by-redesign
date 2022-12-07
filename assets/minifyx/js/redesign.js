@@ -2,7 +2,6 @@ const searchButton = document.querySelector(".header-search-button");
 const searchElement = document.querySelector(".header-search");
 const topline = document.querySelector(".topline");
 const menuButton = document.querySelector(".toggle-mnu");
-const searchInput = document.getElementById("search");
 
 const elementsToHide = [topline, searchElement];
 const toggleButtons = [menuButton, searchButton];
@@ -14,11 +13,10 @@ if (topline) {
 
 if (searchButton && searchElement) {
   const searchClose = document.querySelector(".search-close");
-  searchButton.addEventListener("click", function () {
+  searchButton.addEventListener("click", function (e) {
     searchElement.classList.toggle("active");
     if (!searchElement.classList.contains("active")) return;
-    searchInput.click();
-    searchInput.focus();
+    document.getElementById("search").focus();
   });
   searchClose.addEventListener("click", function () {
     searchElement.classList.remove("active");
