@@ -407,7 +407,7 @@ h2 {
   flex: 1 1 0%;
 }
 .header-icon + .header-icon {
-  margin-left: 1px;
+  margin-left: 3px;
 }
 .header-icon.header-search-button + .header-icon {
   margin-left: 20px;
