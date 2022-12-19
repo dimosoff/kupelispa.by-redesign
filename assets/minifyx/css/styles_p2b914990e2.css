@@ -1220,6 +1220,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .footer a:not(.btn):hover {
   color: #7E9A8E;
 }
+.footer-icon + .footer-icon {
+  margin-left: 3px;
+}
 .footer a.mgo-number {
   margin-left: 8px;
 }
@@ -1969,6 +1972,21 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .kont a:hover {
   color: #5D746A;
+}
+a.mts-icon:before,
+a.a1-icon:before {
+  content: '';
+  width: 20px;
+  height: 1em;
+  display: inline-block;
+  background: none left center/contain no-repeat transparent;
+  vertical-align: middle;
+}
+a.mts-icon:before {
+  background-image: url("/assets/img/icons/mts-logo.png");
+}
+a.a1-icon:before {
+  background-image: url("/assets/img/icons/a1-logo.png");
 }
 .gallery-imgs .image-wrapper {
   position: relative;
