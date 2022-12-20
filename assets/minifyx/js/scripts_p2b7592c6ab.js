@@ -477,6 +477,7 @@ $(function() {
     		margin: 0,
     		items: 1,
     		dots: true,
+        nav: false,
     		navText: ['<i class="left"></i>', '<i class="right"></i>'],
     		autoplay: true,
     		autoHeight: true,
@@ -486,11 +487,9 @@ $(function() {
     		responsive : {
     			0 : {
     				items: 1,
-    				nav:false,
     			},
     			768 : {
     				items: 1,
-    				nav:true,
     			}
     		}	
     	});

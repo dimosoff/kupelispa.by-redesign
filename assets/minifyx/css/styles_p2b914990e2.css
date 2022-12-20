@@ -86,8 +86,7 @@
   user-select: none;
 }
 .owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot {
+.owl-carousel .owl-nav button.owl-prev {
   border: none;
 }
 .owl-carousel.owl-loading {
@@ -2542,7 +2541,7 @@ svg {
   position: absolute;
   right: 30px;
   bottom: 30px;
-  opacity: 0.5;
+  opacity: 0.75;
   overflow: hidden;
   font-size: 0;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -2582,7 +2581,25 @@ svg {
   transform: rotate(-90deg);
 }
 .owl-dots {
+  left: 50px;
+  bottom: 42px;
   position: absolute;
+}
+.owl-dot {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #7E9A8E;
+  transform: scale(1);
+  border-radius: 50%;
+  background-color: #F7F6F4;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.owl-dot.active {
+  transform: scale(1.43);
+  background-color: #7E9A8E;
+}
+.owl-dot + .owl-dot {
+  margin-left: 15px;
 }
 
 @media (min-width: 1200px) {
