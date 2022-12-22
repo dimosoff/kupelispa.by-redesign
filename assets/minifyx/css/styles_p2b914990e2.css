@@ -222,19 +222,19 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
   border: 0;
 }
 ::-webkit-input-placeholder {
-  color: #B7B7B7;
+  color: #666;
   opacity: 1;
 }
 ::-moz-placeholder {
-  color: #B7B7B7;
+  color: #666;
   opacity: 1;
 }
 ::-ms-input-placeholder {
-  color: #B7B7B7;
+  color: #666;
   opacity: 1;
 }
 ::placeholder {
-  color: #B7B7B7;
+  color: #666;
   opacity: 1;
 }
 ::-moz-selection {
@@ -252,12 +252,15 @@ html {
   font-size: 10px;
 }
 body {
-  color: #686868;
+  color: #444444;
   position: relative;
   font-size: 16px;
   overflow-x: hidden;
   line-height: 1.4;
   font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
 }
 body input,
 body textarea {
@@ -418,7 +421,7 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-  color: #757575;
+  color: #555;
   height: 95px;
   z-index: 110;
   position: fixed;
@@ -521,7 +524,7 @@ h2 {
   transform: rotateX(180deg);
 }
 .hover-badge {
-  color: #B7B7B7;
+  color: #666;
   display: block;
   text-align: right;
 }
@@ -766,6 +769,7 @@ h2 {
 }
 .product-line-card__title span {
   color: #7E9A8E;
+  font-weight: 600;
 }
 .product-line-card__bg img, .product-line-card__img img {
   width: 100%;
@@ -857,6 +861,7 @@ h2 {
   transform: translateZ(30px) scale(0.97);
 }
 .flip-card__front {
+  display: flex;
   transform: rotateY(0deg);
 }
 .flip-card__back {
@@ -1383,7 +1388,7 @@ input[type="number"]::-webkit-outer-spin-button {
   max-width: 87px;
 }
 .benefits-description {
-  color: #686868;
+  color: #666;
   font-size: 14px;
   margin-top: 20px;
 }
@@ -1413,7 +1418,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   width: 100%;
   height: 40px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
 }
 .ajax_form textarea {
@@ -1769,7 +1774,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .submenu a,
 .submenu span {
-  color: #686868;
+  color: inherit;
   display: flex;
   padding: 10px;
   font-weight: 500;
@@ -1925,7 +1930,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: 500;
 }
 .blogm-additional {
-	color: #B7B7B7;
+	color: #666;
   font-size: 12px;
 	margin-top: 17px;
 }
@@ -2165,19 +2170,19 @@ svg {
   border-radius: 0;
 }
 .b-checkbox--light .b-checkbox__custom {
-  border: 1px solid #818181;
+  border: 1px solid #555;
 }
 .b-checkbox--light .b-checkbox__input:checked ~ .b-checkbox__custom {
   border-color: #7E9A8E;
 }
 .b-checkbox--light .b-checkbox__custom::before {
-  background-color: #818181;
+  background-color: #555;
 }
 .b-checkbox--light .b-checkbox__input:checked ~ .b-checkbox__custom::before {
   background-color: #7E9A8E;
 }
 .b-checkbox--light .b-checkbox__content {
-  color: #818181;
+  color: #555;
 }
 .b-checkbox--light .b-checkbox__content svg {
   fill: var(--color-secondary);
@@ -2256,7 +2261,7 @@ svg {
   object-position: center;
 }
 .b-radio--img .b-radio__content {
-  color: #818181;
+  color: #555;
 }
 
 /*select*/
@@ -2277,7 +2282,7 @@ svg {
   padding: 0 3em 0 1.4em;
   height: 100%;
   width: 100%;
-  color: #818181;
+  color: #555;
   border: none;
   border-radius: 10px;
   background-color: #F7F6F4;
@@ -2293,7 +2298,7 @@ svg {
 }
 .b-select svg {
   top: 50%;
-  fill: #818181;
+  fill: #555;
   right: 18px;
   width: 18px;
   height: 18px;
@@ -2360,7 +2365,7 @@ svg {
 }
 .calculator-cost__complete .b-select {
   width: 470px;
-  color: #818181;
+  color: #555;
   max-width: 100%;
 }
 .calculator-cost__total {
