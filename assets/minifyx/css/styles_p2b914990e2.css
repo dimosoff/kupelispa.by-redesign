@@ -1368,27 +1368,16 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 18px;
   font-weight: 500;
 }
-.benefits-items > :nth-child(1) {
-  color: #7E9A8E;
-}
-.benefits-items > :nth-child(2) {
-  color: #9AB7BB;
-}
-.benefits-items > :nth-child(3) {
-  color: #B4CECB;
-}
-.benefits-items > :nth-child(4) {
-  color: #B1D0B8;
-}
 .benefits-item {
   padding-right: 2rem;
   margin-bottom: 6rem;
+  color: #7E9A8E;
 }
 .benefits-item img {
   max-width: 87px;
 }
 .benefits-description {
-  color: #666;
+  color: #555;
   font-size: 14px;
   margin-top: 20px;
 }
